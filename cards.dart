@@ -1,8 +1,10 @@
 void main() {
   var deck = Deck();
   deck.shuffle();
-  print(deck.toString());
-  print(deck.cardsWithSuit('Hearts'));
+  print('Before\n $deck \n');
+  print('Deal\n ${deck.deal(5)} \n');
+  print('After\n $deck');
+  print('\nCards with suit Hearts:\n ${deck.cardsWithSuit('Hearts')}');
 }
 
 class Deck {
@@ -31,6 +33,12 @@ class Deck {
 
   Iterable<Card> cardsWithSuit(String suit) {
     return cards.where((card) => card.suit == suit);
+  }
+
+  List<Card> deal(int handSize) {
+    var hand = cards.sublist(0, handSize);
+    cards = cards.sublist(handSize);
+    return hand;
   }
 }
 
