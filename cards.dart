@@ -1,10 +1,18 @@
 void main() {
   var deck = Deck();
-  deck.shuffle();
-  print('Before\n $deck \n');
-  print('Deal\n ${deck.deal(5)} \n');
-  print('After\n $deck');
+
+  print('Deck:\n $deck \n');
+  print('Deal:\n ${deck.deal(6)} \n');
+  print('Deck after deal:\n $deck');
+
   print('\nCards with suit Hearts:\n ${deck.cardsWithSuit('Hearts')}');
+  deck.removeCard('Hearts', 'Ace');
+  print(
+    '\nRemoved Ace of Hearts. Cards with suit Hearts:\n ${deck.cardsWithSuit('Hearts')}',
+  );
+
+  deck.shuffle();
+  print('\nDeck after shuffle:\n $deck');
 }
 
 class Deck {
@@ -39,6 +47,10 @@ class Deck {
     var hand = cards.sublist(0, handSize);
     cards = cards.sublist(handSize);
     return hand;
+  }
+
+  void removeCard(String suit, String rank) {
+    cards.removeWhere((card) => card.suit == suit && card.rank == rank);
   }
 }
 
