@@ -31,7 +31,7 @@ Learning:
 <img src="https://github.com/pratikishere/Flutter-Learning/blob/learning/class-constructor-list/images/cards.png" alt="cards.dart output" width="400" height="350"/>
 
 #### JSON and serialization
-Refer the [json-serialization.dart]
+Refer the [json-serialization.dart](https://github.com/pratikishere/Flutter-Learning/blob/learning/class-constructor-list/json-serialization.dart)
 
 Learning:
 
