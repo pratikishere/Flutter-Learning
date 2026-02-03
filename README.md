@@ -30,6 +30,16 @@ Learning:
 
 <img src="https://github.com/pratikishere/Flutter-Learning/blob/learning/class-constructor-list/images/cards.png" alt="cards.dart output" width="400" height="350"/>
 
+#### JSON and serialization
+Refer the [json-serialization.dart]
+
+Learning:
+
+- JSON parsing
+- Use of fromJson factory method which returns newly initialize instance
+
+<img src="https://github.com/pratikishere/Flutter-Learning/blob/learning/class-constructor-list/images/json-example.png" alt="cards.dart output" width="200" height="150"/>
+
 
 
 
